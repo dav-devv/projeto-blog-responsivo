@@ -112,7 +112,7 @@ aside{
     margin: 1rem;
     background-size: cover;
 }
-a{
+.container-category > a{
     color: white;
     margin: 0 3rem 0 0;
 }
@@ -126,16 +126,23 @@ a{
 .card{
     border-radius: 1rem;
     box-shadow: var(--shadow);
+    max-width: 100%;
+    /* max-height: 30%; */
+    /* object-fit: cover; */
 }
 .card > img{
     border-radius: 1rem 1rem 0 0;
     width: 100%;
+    height: 40%;
     object-fit: cover;
+    aspect-ratio: 1/1;
 }
 .text-card{
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    flex: 1;
 }
 label{
     color: #02a28f;
@@ -150,9 +157,9 @@ label{
 .text-card > span{
     font-size: 0.8rem;
 }
-ul{
+.categories {
     list-style: none;
-    margin: 0;
+    margin: 4%;
     padding: 0;
 }
 li{
@@ -183,13 +190,11 @@ footer{
         margin:0 3% 0 3%;
         display: grid;
         grid-template-columns: 1fr ;
-        gap: 1rem;
     }
     .container-card{
         margin:1rem 0;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
         max-width: 100%;
     }
     
