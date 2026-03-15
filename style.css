@@ -162,6 +162,9 @@ label{
     margin: 4%;
     padding: 0;
 }
+.categories > li > a{
+    color:#000;
+}
 li{
     display: flex;
     justify-content: space-between;
