@@ -58,6 +58,11 @@ h4{
 .superimposed{
     position: relative;
 }
+.superimposed:hover{
+    transform: translateY(-5px);
+    box-shadow: 0.8rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
 .overlay-text{
     position: absolute;
     bottom: 0;
@@ -106,6 +111,11 @@ aside{
     width: 100%;
     min-width: 100%;
 }
+.aside-post:hover{
+    transform: translateY(-5px);
+    box-shadow: 0.8rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
 .aside-post > img{
     border-radius: 1rem;
     width: 40%; 
@@ -127,8 +137,11 @@ aside{
     border-radius: 1rem;
     box-shadow: var(--shadow);
     max-width: 100%;
-    /* max-height: 30%; */
-    /* object-fit: cover; */
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0.8rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 .card > img{
     border-radius: 1rem 1rem 0 0;
